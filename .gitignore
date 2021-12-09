@@ -1,12 +1,3 @@
-.vscode
 .DS_Store
-
-node_modules
-
-build
-
-dist
-
-*error.log
-
 *.swp
+node_modules

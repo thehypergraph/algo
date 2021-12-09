@@ -1,0 +1,21 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true
+  },
+  "extends": ["prettier", "prettier/@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "import-helpers", "prettier"],
+  "rules": {
+    "linebreak-style": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "prettier/prettier": ["error"]
+  }
+}
