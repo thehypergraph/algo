@@ -12,6 +12,6 @@ pub mod tests {
     #[test]
     pub fn factorial_of_ten() {
         let val = factorial(10);
-				assert_eq!(val, 3628800);
+        assert_eq!(val, 3628800);
     }
 }
