@@ -2,3 +2,6 @@
 .DS_Store
 *.swp
 .env
+.zig-cache
+zig-out
+zig-cache
