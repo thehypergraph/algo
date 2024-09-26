@@ -1,9 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
+import "algo/series"
 
 func main() {
-	fmt.Println("Hello, World!")
+	foo := series.Fib(10)
+
+	println("The 10th number in the Fibonacci series is", foo)
+
 }
