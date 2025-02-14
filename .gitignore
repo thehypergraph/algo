@@ -2,4 +2,5 @@ algo
 .DS_Store
 *.swp
 .env
-
+*.o
+_build/
