@@ -1,6 +1,5 @@
-package series
 
-fib :: proc(n: u32) -> u32 {
+export default function fib(n: number): number {
   if (n == 0) {
     return 0;
   }
