@@ -1,15 +1,15 @@
 package series
 
-import "fmt"
+var cache = map[int32]int32{
+	0: 1,
+	1: 1,
+}
 
-func Fib(n int) int {
-	fmt.Println(n)
-	if n == 0 {
-		return 0
-	}
+func Fib(n int32) int32 {
+	item, exists := cache[n]
 
-	if n == 1 {
-		return 1
+	if exists {
+		return item
 	}
 
 	return Fib(n-1) + Fib(n-2)

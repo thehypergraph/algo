@@ -4,3 +4,4 @@ algo
 .env
 *.o
 _build/
+algo
