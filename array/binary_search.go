@@ -1,23 +1,25 @@
 package array
 
-import "fmt"
+import "errors"
 
-func BinarySearch(arr []int, target int) int {
-	left, right := 0, len(arr)-1
+func BinarySearch(haystack []uint32, needle uint32) (uint32, error) {
+	lo := 0
+	hi := len(haystack)
 
-	for left <= right {
-		mid := (left + right) / 2
+	for lo < hi {
+		m := lo + (hi-lo)/2
+		v := haystack[m]
 
-		fmt.Println("left", left, "right", right, "mid", mid)
-
-		if arr[mid] == target {
-			return mid
+		if v == needle {
+			return v, nil
 		}
-		if arr[mid] < target {
-			left = mid + 1
+
+		if v > needle {
+			hi = m
 		} else {
-			right = mid - 1
+			lo = m + 1
 		}
 	}
-	return -1
+
+	return 0, errors.New("No matches")
 }
