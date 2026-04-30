@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Println("Hello, World!")
-	for i := 1; i <= 100; i++ {
-		fmt.Printf("Fibonacci(%d) = %d\n", i, series.BinetFib(int32(i)))
+	for i := int32(1); i <= 20; i++ {
+		fmt.Printf("Fibonacci(%d) = %d\n", i, series.Fib(i))
 	}
 }

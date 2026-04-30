@@ -32,3 +32,14 @@ func BinetFib(n int32) int32 {
 
 	return int32(res)
 }
+
+func FibMemo(n int64, cache *map[int64]int64) int64 {
+	if item, exists := (*cache)[n]; exists {
+		return item
+	}
+
+	res := FibMemo(n-1, cache) + FibMemo(n-2, cache)
+	(*cache)[n] = res
+
+	return res
+}

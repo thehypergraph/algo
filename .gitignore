@@ -3,5 +3,4 @@
 *.swp
 .env
 *.o
-_build/
-target
+algo
